@@ -1,0 +1,200 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    background: url(bg6.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+#heading
+{
+    border: 5px solid black;
+    font-size: 1.6em;;
+    background-color: silver;
+    text-align: center;
+    height:50px;
+    padding-top:25px;
+    padding-bottom: 20px;
+    color:white;
+    text-shadow: 2px 2px;
+    font-family: sans-serif;
+}
+button
+{
+    padding: 10px 38px;
+    border: none;
+    border-radius: 30px;
+    font-size: 14px;
+    background-color: yellow;
+    cursor: pointer;
+
+}
+button:hover
+{
+    background-color: black;
+    transition: 0.6s;
+}
+h1{
+  text-align: center;
+  text-shadow: 2px 2px;
+}
+.Product_name{
+  margin-left: 580px;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color:red;
+}
+option{
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+#products{
+  margin-top: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-left: 580px;
+  background-color: silver;
+  text-align: center;
+
+}
+.checkbox{
+  margin-top: 10px;
+  margin-left: 580px;
+  font-size: 20px;
+  color: silver;
+}
+.radio{
+  position: absolute;
+  top:68%;
+  left: 45%;
+  transform-translate(-50%, -50%);
+  width: 200px;
+  padding: 20px;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,1);
+  border-radius: 5px;
+  overflow: hidden;
+}
+.radio:before{
+  content:  '';
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  transform: skewX(-3deg);
+  pointer-events: none;
+}
+.radio p{
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 20px;
+}
+.radio label{
+  position: relative;
+  cursor: pointer;
+}
+.radio label input{
+  display: none;
+}
+.radio label span{
+  position: relative;
+  display: inline-block;
+  margin: 20px 10px;
+  width: 50px;
+  background: #000;
+  border:1px solid #444;
+  color: #444;
+  border-radius: 4px;
+}
+.radio label input:checked ~ span{
+  color: #fff;
+  border: 1px;
+  border: 1px solid #008eff;
+}
+.radio label input:checked ~ span:before{
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #008eff;
+  z-index: -1;
+  filter: blur(10px);
+}
+.radio label input:checked ~ span:after{
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #008eff;
+  z-index: -1;
+  filter: blur(15px);
+}
+.radio label input:checked ~ span.yes{
+  color: #62ff00;
+  border-color: #62ff00;
+  box-shadow: inset 0 0 10px #62ff00;
+}
+.radio label input:checked ~ span.yes:before,
+.radio label input:checked ~ span.yes:after {
+  background: #62ff00;
+}
+.radio label input:checked ~ span.no{
+  color: #ff0000;
+  border-color: #ff0000;
+  box-shadow: inset 0 0 10px #ff0000;
+}
+.radio label input:checked ~ span.no:before,
+.radio label input:checked ~ span.no:after {
+  background: #ff0000;
+}
+.button{
+  position: absolute;
+  text-align: center;
+  padding: 20px;
+  margin-left: 700px;
+  margin-top: 150px;
+  font-size: 20px;
+  color: #15f4ee;
+  font-family: Poppins;
+  font-weight:50;
+  border: 3px solid #15f4ee;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: 1.5s;
+}
+.button:hover{
+  box-shadow: 0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee,
+              0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee;
+
+}
+.textarea{
+  margin-left:1000px;
+  margin-top: 60px;
+  width: 400px;
+  height: 150px;
+  border-radius: 10px;
+  border-color: red;
+}
+
+.footer{
+  margin-top: 10px;
+    text-align: center;
+    float: none;
+    background-color: green;
+  }
